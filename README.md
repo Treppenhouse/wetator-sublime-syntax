@@ -9,3 +9,5 @@ Simply download the `wetator.sublime-syntax` file and put it into your users's p
 Click on `Preferences` -> `Browse Packages...` -> *User*
 
 (Under Windows this should be here: `C:\Users\$USER\AppData\Roaming\Sublime Text 3\Packages\User`) 
+
+[[doc/installation.gif]]
