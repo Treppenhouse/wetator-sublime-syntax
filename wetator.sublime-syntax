@@ -1,0 +1,24 @@
+%YAML 1.2
+---
+name: Wetator Wiki Text
+file_extensions: [wett]
+scope: source.wett
+
+contexts:
+  main:
+    - match: ^(assert-content|assert-deselected|assert-disabled|assert-enabled|assert-focus|assert-selected|assert-set|assert-sql|assert-title|click-double-on|click-on|click-right-on|close-window|confirm-next|describe|deselect|exec-java|exec-js|exec-sql|go-back|mouse-over|open-bookmark|open-url|save-bookmark|select|set|use-module|wait)
+      scope: keyword.control.wett
+      push: wetator_command
+    - match: "#"
+      scope: punctuation.definition.comment
+      push: single_line_comment
+  single_line_comment:
+    - meta_scope: comment.line
+    - match: $
+      pop: true
+  wetator_command:
+    - meta_scope: string.wett
+    - match: \|\|
+      scope: entity.name.wett
+    - match: $
+      pop: true
