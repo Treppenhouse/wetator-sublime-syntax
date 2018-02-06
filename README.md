@@ -10,4 +10,4 @@ Click on `Preferences` -> `Browse Packages...` -> *User*
 
 (Under Windows this should be here: `C:\Users\$USER\AppData\Roaming\Sublime Text 3\Packages\User`) 
 
-[[doc/installation.gif]]
+[[https://github.com/Treppenhouse/wetator-sublime-syntax/blob/master/doc/installation.gif]]
